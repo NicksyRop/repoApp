@@ -69,10 +69,10 @@ const repositoryItem = ({ item }) => (
       </View>
 
       <View style={styles.description}>
-        <Text style={{ fontSize: 20, fontWeight: "bold" }}>
+        <Text style={{ fontSize: 20, fontFamily: "Robotto-Black" }}>
           {item.fullName}
         </Text>
-        <Text>{item.description}</Text>
+        <Text style={{ fontFamily: "Robotto-light" }}>{item.description}</Text>
         <Button title={item.language} />
       </View>
     </View>
@@ -133,6 +133,7 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
+    fontFamily: "Robotto-Medium",
   },
   image: {
     width: Dimensions.get("window").width / 2 - 80,
